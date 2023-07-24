@@ -1,0 +1,409 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <title>FX5U user web page demo</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script type="text/javascript" src="script/functions.js"></script>
+  <link href="css/css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="container" style="width:980px;">
+<script>
+  refresh_ms=1000;
+  basic_color = '#555';
+</script>
+
+  <div id="title_div">
+    <img title="Electrobit" class="logo" alt="Electrobit" src="img/logo.png">
+    <h1>FX5U user web page demo</h1>
+  </div>
+           
+      <svg 
+        class="svg_gauge"
+        data-tag="wSD215"
+        data-type="1" 
+        width="300" 
+        height="200"
+        data-min_raw="0" 
+        data-max_raw="60"
+        data-min_eng="-30" 
+        data-max_eng="270"
+        data-round_to="2"
+        data-val_green="170" 
+        data-val_yellow="220" 
+        data-val_red="270" 
+        data-val_unit=" mm" 
+        data-tick_no="6"
+        data-sub_tick_no="9" 
+        data-line_width="1" 
+        data-line_col_width="10" 
+        data-needle_width="30"
+        data-tick_font_size="12"
+        data-val_font_size="15"
+        data-val_title="Gauge type 1 demo: " 
+      > </svg>
+      
+      <svg 
+        class="svg_gauge"
+        data-tag="wSD215"
+        data-type="2" 
+        width="300" 
+        height="200"
+        data-min_raw="0" 
+        data-max_raw="60"
+        data-min_eng="0" 
+        data-max_eng="60"
+        data-round_to="2"
+        data-val_green="40" 
+        data-val_yellow="50" 
+        data-val_red="60"
+        data-val_unit=" sec" 
+        data-tick_no="6"
+        data-sub_tick_no="9" 
+        data-line_width="1" 
+        data-line_col_width="10" 
+        data-needle_width="3"
+        data-tick_font_size="12"
+        data-val_font_size="15"
+        data-val_title="Gauge type 2: " 
+      > </svg>
+      <svg 
+        class="svg_gauge"
+        data-tag="wSD215"
+        data-type="3" 
+        width="300" 
+        height="200"
+        data-min_raw="0" 
+        data-max_raw="60"
+        data-min_eng="-30" 
+        data-max_eng="270"
+        data-round_to="2"
+        data-val_green="170" 
+        data-val_yellow="220" 
+        data-val_red="270" 
+        data-val_unit=" sec" 
+        data-tick_no="6"
+        data-sub_tick_no="4" 
+        data-line_width="1" 
+        data-line_col_width="10" 
+        data-needle_width="30"
+        data-tick_font_size="12"
+        data-val_font_size="15"
+        data-val_title="Gauge type 3: " 
+      > </svg>
+      <svg 
+        class="svg_gauge"
+        data-tag="wSD215"
+        data-type="4" 
+        width="300" 
+        height="200"
+        data-min_raw="0" 
+        data-max_raw="60"
+        data-min_eng="-30" 
+        data-max_eng="270"
+        data-round_to="2"
+        data-val_green="170" 
+        data-val_yellow="220" 
+        data-val_red="270"
+        data-val_unit=" sec" 
+        data-tick_no="6"
+        data-sub_tick_no="2" 
+        data-line_width="1" 
+        data-line_col_width="10" 
+        data-needle_width="30"
+        data-tick_font_size="12"
+        data-val_font_size="15"
+        data-val_title="Gauge type 4: " 
+      > </svg>
+      <div class="box_div" style="width:260px;">
+        <svg
+          class="svg_light"
+          width="250" 
+          height="30"
+          data-light_pos="left" 
+          data-line_width="2"
+          data-text="Value bit 0"
+          data-font_size="15"  
+          data-diam="10"
+          data-color="red"
+          data-blink="0"    
+          data-tag="wSD215.0"    
+        ></svg> 
+        <svg
+          class="svg_light"
+          width="250" 
+          height="30"
+          data-light_pos="left" 
+          data-line_width="2" 
+          data-text="Value bit 1"
+          data-font_size="15"  
+          data-diam="10"
+          data-color="yellow"
+          data-blink="0"    
+          data-tag="wSD215.1"    
+        ></svg> 
+        <svg
+          class="svg_light"
+          width="250" 
+          height="30"
+          data-light_pos="left" 
+          data-line_width="2"
+          data-text="Value bit 2"
+          data-font_size="15"  
+          data-diam="10"
+          data-color="lime"
+          data-blink="0"    
+          data-tag="wSD215.2"    
+        ></svg> 
+        <svg
+          class="svg_light"
+          width="250" 
+          height="30"
+          data-light_pos="left" 
+          data-line_width="2"
+          data-text="Value bit 3"
+          data-font_size="15"  
+          data-diam="10"
+          data-color="blue"
+          data-blink="0"  
+          data-tag="wSD215.3"    
+        ></svg> 
+     
+      <svg
+        class="multitext"
+        width="250" 
+        height="30"
+        data-text_data="1:üks; 2:kaks; 3:kolm; 4:neli; 5:viis; 0:null"          
+        data-text_pos="right" 
+        data-label="Multitext demo int(sec/10): "
+        data-font_size="15"  
+        data-tag="wSD215"    
+      ></svg>
+      
+      <svg 
+        class="svg_value"
+        data-tag="wSD215"
+        width="250" 
+        height="30"
+        data-min_raw="0" 
+        data-max_raw="60"
+        data-min_eng="-30" 
+        data-max_eng="270"
+        data-round_to="2"
+        data-val_unit=" mm" 
+        data-font_size="15"
+        data-text_pos="right" 
+        data-label="Gauge 1: " 
+      > </svg>
+      <svg 
+        class="svg_value"
+        data-tag="wSD521"
+        width="250" 
+        height="30"
+        data-min_raw="0" 
+        data-max_raw="1000"
+        data-min_eng="0" 
+        data-max_eng="1000"
+        data-round_to="2"
+        data-val_unit=" μs" 
+        data-font_size="15"
+        data-text_pos="right" 
+        data-label="CPU scan time: " 
+      > </svg>
+       </div>
+
+     
+       <svg 
+        class="svg_chart"
+        data-title="Trend 1"
+        data-type="1" 
+        width="800" 
+        height="350"
+        data-pen_1_pen_title="Pen 1" 
+        data-pen_1_start_tag="wD100" 
+        data-pen_1_tag_no="100"
+        data-pen_1_unit=" mm"
+        data-pen_1_min_raw="0" 
+        data-pen_1_max_raw="120"
+        data-pen_1_min_eng="0" 
+        data-pen_1_max_eng="120"
+        data-pen_1_round_to="2"
+        data-pen_1_tick_no="6"
+        data-pen_1_col="red"
+        data-pen_2_pen_title="Pen 2"
+        data-pen_2_start_tag="wD200" 
+        data-pen_2_tag_no="200"
+        data-pen_2_unit=" mm"
+        data-pen_2_min_raw="0" 
+        data-pen_2_max_raw="120"
+        data-pen_2_min_eng="0" 
+        data-pen_2_max_eng="120"
+        data-pen_2_round_to="2"
+        data-pen_2_tick_no="10"
+        data-pen_2_col="blue"
+        data-pen_3_pen_title="CPU scan time"
+        data-pen_3_start_tag="wD300" 
+        data-pen_3_tag_no="100"
+        data-pen_3_unit=" μs"
+        data-pen_3_min_raw="0" 
+        data-pen_3_max_raw="800"
+        data-pen_3_min_eng="0" 
+        data-pen_3_max_eng="800"
+        data-pen_3_round_to="2"
+        data-pen_3_tick_no="10"
+        data-pen_3_col="purple"
+        data-pen_4_pen_title="Pen 4"
+        data-pen_4_start_tag="wD400" 
+        data-pen_4_tag_no="100"
+        data-pen_4_unit=" mm"
+        data-pen_4_min_raw="0" 
+        data-pen_4_max_raw="200"
+        data-pen_4_min_eng="0" 
+        data-pen_4_max_eng="200"
+        data-pen_4_round_to="2"
+        data-pen_4_tick_no="10"
+        data-pen_4_col="green"
+        data-x_tick_no="9"
+        data-x_tick_min="-100"
+        data-x_tick_max="0"
+        data-pen_width="1" 
+        data-tick_font_size="11"
+        data-pen_font_size="13"
+        data-title_font_size="25"
+      > </svg>
+      
+      <svg 
+        class="svg_value_input"
+        data-tag="wD20"
+        width="300" 
+        height="30"
+        data-min_raw="0" 
+        data-max_raw="1000"
+        data-min_eng="0" 
+        data-max_eng="1000"
+        data-round_to="2"
+        data-val_unit=" cm" 
+        data-font_size="15"
+        data-text_pos="left" 
+        data-label="Input value D20 (max 1000): " 
+      > </svg>
+      
+       
+      <svg 
+        class="svg_gauge"
+        data-tag="wD20"
+        data-type="2" 
+        width="300" 
+        height="200"
+        data-min_raw="0" 
+        data-max_raw="1000"
+        data-min_eng="0" 
+        data-max_eng="1000"
+        data-round_to="1"
+        data-val_green="600" 
+        data-val_yellow="800" 
+        data-val_red="1000" 
+        data-val_unit=" cm" 
+        data-tick_no="10"
+        data-sub_tick_no="3" 
+        data-line_width="1" 
+        data-line_col_width="10" 
+        data-needle_width="1"
+        data-tick_font_size="12"
+        data-val_font_size="15"
+        data-val_title="D20 value: " 
+      > </svg>
+ <div class="box_div" style="width:260px; border-color:#fff;">
+      <svg 
+       class="svg_button_input"
+       data-tag="bM20"
+       width="150" 
+       height="50" 
+       data-font_size="15"
+       data-label_on="M20 toggle (ON)"
+       data-label_off="M20 Toggle (OFF)"
+       data-label_color="#333"
+       data-color_on="#CCF6C9"
+       data-color_off="#F9D4D4"
+       data-type="toggle"
+     > </svg>
+     <svg 
+       class="svg_button_input"
+       data-tag="bM20"
+       width="150" 
+       height="50" 
+       data-font_size="15"
+       data-label_on="M20 running"
+       data-label_off="M20 start"
+       data-label_color="white"
+       data-color_on="#555"
+       data-color_off="green"
+       data-type="set"
+     > </svg>
+     <svg 
+       class="svg_button_input"
+       data-tag="bM20"
+       width="150" 
+       height="50" 
+       data-font_size="15"
+       data-label_on="M20 stop"
+       data-label_off="M20 stopped"
+       data-label_color="white"
+       data-color_on="red"
+       data-color_off="#555"
+       data-type="reset"
+     > </svg>
+</div> 
+<svg 
+       class="svg_button_navi"
+       width="150" 
+       height="50" 
+       data-font_size="12"
+       data-label="My page"
+       data-url="my_page.html"
+       data-label_color="#333"
+       data-color="#eee"
+     > </svg>    
+    <h2>Code example for Gauge 1</h2>
+    <xmp>
+    <svg 
+        class="svg_gauge"
+        data-tag="wSD215"
+        data-type="1" 
+        width="500" 
+        height="400"
+        data-min_raw="0" 
+        data-max_raw="60"
+        data-min_eng="-30" 
+        data-max_eng="270"
+        data-round_to="2"
+        data-val_green="45" 
+        data-val_yellow="95" 
+        data-val_red="120" 
+        data-val_unit=" mm" 
+        data-tick_no="6"
+        data-sub_tick_no="9" 
+        data-line_width="1" 
+        data-line_col_width="10" 
+        data-needle_width="30"
+        data-tick_font_size="12"
+        data-val_font_size="15"
+        data-val_title="Gauge type 1 demo: " 
+      > </svg>
+    
+    </xmp>
+    <div id="footer_div">
+    <div>
+    by Electrobit OÜ<br/>
+    https://electrobit.ee<br/>
+    2019
+    </div>
+    <div>
+    <span id="scan_stats"></span>
+    </div>
+    </div>  
+      
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+
+/* .............................. */
+/* css.css */
+/* FX5U user web page demo by Electrobit OÜ | https://electrobit.ee | IVN-2019 */
+/* .............................. */
+
+body {
+	background-color:#fafafa;
+  
+	font-family:"Arial",sans-serif;
+	padding:0px;
+	margin:0px;
+	color:#555;
+	font-size:15px;
+	}
+
+html, body {
+  height: 100%; 
+	}
+
+img{
+  border-style: none;  
+}	
+#container {
+  background-color:#fff;
+  margin:5px auto 5px auto;
+  padding: 5px 10px 10px 10px;
+}
+#title_div {
+    display: block;
+    border-bottom: 2px solid #bbb;
+    margin-bottom: 20px;
+    padding: 15px 0px;
+}
+#title_div h1 {
+    font-size: 25px;
+    color: #777;
+    display: inline-block;
+    margin: 0px 25px;
+}
+.box_div {
+    border: #999 1px solid;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+#footer_div {
+    display: block;
+    border-top: 1px solid #bbb;
+    margin-top: 15px;
+    padding: 15px 0px;
+    color:#999;
+}
