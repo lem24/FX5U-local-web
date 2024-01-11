@@ -1,5 +1,5 @@
 # FX5U-local-web
-Mitshubisht PLC FX5U local web server ongoing
+Mitshubisht PLC FX5U local web server project closed.
 
 simple local web server with PLC FX5U
 -------------------------------------
